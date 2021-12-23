@@ -1,5 +1,7 @@
-{ pkgs ? import <nixpkgs> { } }:
+{ sources ? import ./nix/sources.nix { } }:
 
-pkgs.poetry2nix.mkPoetryApplication {
+let pkgs = import sources.nixpkgs { };
+in pkgs.poetry2nix.mkPoetryApplication {
   projectDir = ./.;
+  python = pkgs.python39;
 }
