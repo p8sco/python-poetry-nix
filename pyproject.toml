@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry-python-nix"
+name = "python-nix"
 version = "0.1.0"
 description = ""
 authors = ["Gustavo Porto <gustavoporto@ya.ru>"]
