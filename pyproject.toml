@@ -3,12 +3,18 @@ name = "python-nix"
 version = "0.1.0"
 description = ""
 authors = ["Gustavo Porto <gustavoporto@ya.ru>"]
+packages = [
+	{ include = "**/*.py" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 Flask = "^2.0.2"
 
 [tool.poetry.dev-dependencies]
+
+[tools.poetry.scripts]
+python-nix = "python-nix:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
