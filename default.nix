@@ -3,5 +3,5 @@
 let pkgs = import sources.nixpkgs { };
 in pkgs.poetry2nix.mkPoetryApplication {
   projectDir = ./.;
-  python = pkgs.python38;
+  python = pkgs.python39;
 }

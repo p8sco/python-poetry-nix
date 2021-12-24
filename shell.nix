@@ -6,7 +6,7 @@ let
   # Builds the python env based on ../pyproject.toml 
   pythonEnv = pkgs.poetry2nix.mkPoetryEnv {
     projectDir = ./.;
-    python = pkgs.python38;
+    python = pkgs.python39;
   };
 in pkgs.mkShell {
   buildInputs = [ pythonEnv pkgs.poetry ];
